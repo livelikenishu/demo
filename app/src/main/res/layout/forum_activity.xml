@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.Forum">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/slideview"
+        android:layout_width="374dp"
+        android:layout_height="531dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="5dp">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/refresh"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/expand">
+
+
+        </android.support.design.widget.TabLayout>
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/profileToolBar"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_edittext">
+
+            <RelativeLayout
+                android:id="@+id/select"
+                android:layout_width="359dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:id="@+id/healthcare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="5dp"
+                    android:text="Healthcare"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/spinner"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/healthcare"
+                    android:src="@drawable/expand" />
+
+
+                <TextView
+                    android:id="@+id/tvNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/spinner"
+                    android:text="language"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/spinnerDirectory"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/tvNext"
+                    android:src="@drawable/expand" />
+
+                <TextView
+                    android:id="@+id/Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/spinnerDirectory"
+                    android:text="Location"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/Location"
+                    android:src="@drawable/expand" />
+
+
+                <ImageView
+                    android:id="@+id/submit"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/arrow"
+                    android:src="@drawable/submit" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+    </RelativeLayout>
+
+
+    <!-- Middle section (body) -->
+    <RelativeLayout
+        android:id="@+id/textmessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="18dp">
+
+        <include
+            layout="@layout/sample"
+            android:layout_width="match_parent"
+            android:layout_height="513dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="20dp" />
+
+    </RelativeLayout>
+    <!-- bottom navigation -->
+</RelativeLayout>

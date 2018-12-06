@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f4831f</color>
+    <color name="blue">#4A90E2</color>
+    <color name ="colorPrimaryDark"> #F5780B</color>
+    <color name="colorAccent">#f4831f</color>
+    <color name="colorBackGround">#323232</color>
+    <color name="colorGray">#999999</color>
+    <color name="colorOrange">#f4831f</color>
+    <color name="colorLightGray">#D3D3D3</color>
+    <color name="colorBackground">#f8f8f8</color>
+    <color name="colorNavAccentSelected">#4A90E2</color>
+    <color name="colorNavAccentUnselected">#727272</color>
+    <color name="grey">#bfbfbf</color>
+    <color name="white">#fff</color>
+    <color name="black">#000000</color>
+    <color name="mcam_color_light">#FAFAFA</color>
+    <color name="circle">#eed9c9</color>
+
+
+</resources>

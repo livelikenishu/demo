@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Selecttabs"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/language"
+        android:layout_width="376dp"
+        android:layout_height="228dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/feedcategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/upload"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="11dp"
+            android:gravity="center"
+            android:text="Language"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            app:layout_constraintBottom_toTopOf="@+id/spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="260dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="52dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_background_orange"
+            android:onClick="caller"
+            android:text="+Add"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.173" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="215dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text=" Your Deafult Selected Language is :English"
+            android:textColor="@color/colorGray"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/button"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_background_bluecorners"
+            android:onClick="colorchange1"
+            android:text="Button"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintEnd_toStartOf="@+id/button12"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.011" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_background_bluecorners"
+            android:onClick="colorchange2"
+            android:text="Button"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.251"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_background_bluecorners"
+            android:onClick="colorchange3"
+            android:text="Button"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintStart_toEndOf="@+id/button12"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.156" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/button_background_bluecorners"
+            android:onClick="colorchange4"
+            android:text="Button"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintStart_toEndOf="@+id/button13"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.014" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/button_background_bluecorners"
+            android:onClick="colorchange5"
+            android:text="Button"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.074"
+            app:layout_constraintStart_toEndOf="@+id/button14"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.014" />
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@drawable/button_background_bluecorners"
+            android:onClick="colorchange6"
+            android:text="Button"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.453"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.769" />
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="371dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.727"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="83dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="28dp"
+            android:text="Your Feeds"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="206dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="(Select Feeds you wish to receive calls for!)"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.409"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/feedcategory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="300dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour8"
+                    android:text="Technology"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:layout_editor_absoluteY="100dp" />
+
+                <Button
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour2"
+                    android:text="Politics"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    app:layout_constraintEnd_toStartOf="@+id/eight"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <Button
+                    android:id="@+id/six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toStartOf="@+id/seven"
+                    android:layout_toLeftOf="@+id/seven"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour6"
+                    android:text="Fun"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    app:layout_constraintBottom_toTopOf="@+id/five"
+                    app:layout_constraintEnd_toStartOf="@+id/two"
+                    app:layout_constraintHorizontal_bias="0.764"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="210dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+
+                <Button
+                    android:id="@+id/four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour4"
+                    android:text="Technology"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    tools:layout_editor_absoluteX="186dp"
+                    tools:layout_editor_absoluteY="148dp" />
+
+                <Button
+                    android:id="@+id/five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour5"
+                    android:text="Designing"
+                    android:textColor="@color/white"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="290dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <Button
+                    android:id="@+id/three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour3"
+                    android:text="Design"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    tools:layout_editor_absoluteX="250dp"
+                    tools:layout_editor_absoluteY="212dp" />
+
+
+                <Button
+                    android:id="@+id/one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour1"
+                    android:text="Sports"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    tools:layout_editor_absoluteX="47dp"
+                    tools:layout_editor_absoluteY="210dp" />
+
+                <Button
+                    android:id="@+id/seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour7"
+                    android:text="Marriage"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    tools:layout_editor_absoluteX="148dp"
+                    tools:layout_editor_absoluteY="210dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="190dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+
+                <Button
+                    android:id="@+id/nine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour9"
+                    android:text="Bank"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    tools:layout_editor_absoluteX="84dp"
+                    tools:layout_editor_absoluteY="263dp" />
+
+                <Button
+                    android:id="@+id/ten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour10"
+                    android:text="Love"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    tools:layout_editor_absoluteX="198dp"
+                    tools:layout_editor_absoluteY="263dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="290dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginEnd="42dp"
+                android:layout_marginRight="42dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+                <Button
+                    android:id="@+id/eleven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour11"
+                    android:text="Health"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    tools:layout_editor_absoluteX="44dp"
+                    tools:layout_editor_absoluteY="309dp" />
+
+                <Button
+                    android:id="@+id/twelve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour12"
+                    android:text="Job"
+                    android:textSize="11dp"
+                    android:textColor="@color/white"
+                    tools:layout_editor_absoluteX="252dp"
+                    tools:layout_editor_absoluteY="308dp" />
+
+                <Button
+                    android:id="@+id/thirteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour13"
+                    android:text="Marriage"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    tools:layout_editor_absoluteX="144dp"
+                    tools:layout_editor_absoluteY="308dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+                <Button
+                    android:id="@+id/fourteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour14"
+                    android:text="Marriage"
+                    android:textSize="11dp"
+                    android:textColor="@color/white"
+                    tools:layout_editor_absoluteX="84dp"
+                    tools:layout_editor_absoluteY="360dp" />
+
+                <Button
+                    android:id="@+id/fifteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour15"
+                    android:text="Technology"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    tools:layout_editor_absoluteX="180dp"
+                    tools:layout_editor_absoluteY="360dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="300dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+
+                <Button
+                    android:id="@+id/sixteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour16"
+                    android:text="Fun"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    tools:layout_editor_absoluteX="39dp"
+                    tools:layout_editor_absoluteY="408dp" />
+
+                <Button
+                    android:id="@+id/Seventeen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour17"
+                    android:text="Education"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    tools:layout_editor_absoluteX="150dp"
+                    tools:layout_editor_absoluteY="408dp" />
+
+                <Button
+                    android:id="@+id/Eighteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_background_bluecorners"
+                    android:onClick="changecolour18"
+                    android:text="Style"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    tools:layout_editor_absoluteX="255dp"
+                    tools:layout_editor_absoluteY="408dp" />
+
+            </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="120dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background_orange"
+        android:onClick="backpage"
+        android:text="Continue"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedcategory" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Simplifyi</string>
+    <string name="enter_mobile_number">Enter your mobile number</string>
+    <string name="send_verification_pin">We will send a 4 digit verification pin</string>
+    <string name="text_mobileNo">Mobile Number</string>
+    <string name="text_continue">Continue</string>
+    <string name="text_splashscreen">A place to can get\n answers for your question\nfrom the world...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notification_fragment">David has replied to your post and Started following you.</string>
+
+    <string name="text_question">i am searching for this tablet for my father in Bangalore.can any one suggest me where can i get this tablet </string>
+    <string name="text_note">Note: if you are the correct person to answer this \n shoot it..Become a buddy for an anonnomous user</string>
+    <string name="register">Happy to have you here, a place to find \n answer or information for all your questions</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>Kannada</item>
+        <item>Malayalam</item>
+        <item>Hindi</item>
+        <item>Telugu</item>
+    </string-array>
+
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_maindemo">Maindemo</string>
+
+    <string name="tips">285 \n Tips</string>
+    <string name="share">share \n contact</string>
+    <string name="category">Category</string>
+    <string name="followers">3,405 \n Followers</string>
+    <string name="following">890 \n Following</string>
+    <string name="termsandconditions">Terms&amp;Conditions</string>
+    <string name="text1">Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit,used do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat
+        nulla pariatur. Excepteur sint occaecat
+        cupidatat /n  non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex
+        ea commodo consequat.</string>
+    <string name="text2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, </string>
+    <string name="text3">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely </string>
+
+</resources>

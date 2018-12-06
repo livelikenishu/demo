@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/simplify"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:enabled="true"
+        android:title="Simplifyi"
+         />
+
+    <item
+        android:id="@+id/activity"
+        android:icon="@drawable/ic_description_black_24dp"
+        android:enabled="true"
+        android:title="Activity"
+        />
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_add_circle_black_24dp"
+        android:enabled="true"
+        android:title="Call Now" />
+    <item
+        android:id="@+id/earn"
+        android:icon="@drawable/ic_monetization_on_black_24dp"
+        android:enabled="true"
+        android:title="Earn" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:enabled="true"
+        android:title="Profile" />
+
+</menu>

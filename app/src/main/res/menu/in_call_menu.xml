@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/in_call_speaker"
+        android:icon="@drawable/speaker"
+        android:title="Speaker"
+        />
+    <item
+        android:id="@+id/in_call_mute-microphone"
+        android:icon="@drawable/icon_mute_microphone"
+        android:title="Mute"
+        />
+    <item
+        android:id="@+id/in_call_no_phone"
+        android:icon="@drawable/no_phone"
+        android:title="Disconnect Call"
+        />
+
+</menu>
