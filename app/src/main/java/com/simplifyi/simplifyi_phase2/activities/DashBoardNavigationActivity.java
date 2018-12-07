@@ -10,6 +10,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.simplifyi.simplifyi_phase2.R;
@@ -18,10 +21,13 @@ import com.simplifyi.simplifyi_phase2.fragment.add;
 import com.simplifyi.simplifyi_phase2.fragment.earn;
 import com.simplifyi.simplifyi_phase2.fragment.profile;
 import com.simplifyi.simplifyi_phase2.fragment.simplifyfragment;
+import com.simplifyi.simplifyi_phase2.sinch.CallActivity;
 
 public class DashBoardNavigationActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
+    public ImageButton but;
+    public ImageView call;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -66,10 +72,32 @@ public class DashBoardNavigationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboardnavigationactivity);
+        init();
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
+    private void init() {
+        but=(ImageButton)findViewById(R.id.setting);
+        but.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashBoardNavigationActivity.this, Selecttabs.class);
+                startActivity(intent);
+            }
+        });
+
+        call=(ImageView)findViewById(R.id.callanswer);
+        call.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashBoardNavigationActivity.this, CallActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
 }
+
+

@@ -163,7 +163,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/call"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="28dp"
@@ -187,15 +187,15 @@
                 android:text="165 Followers"
                 android:textSize="11dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintEnd_toStartOf="@+id/reject"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/call"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.454" />
 
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/reject"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginTop="8dp"
@@ -225,7 +225,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/imageButton2"
                 app:layout_constraintHorizontal_bias="0.133"
-                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintStart_toEndOf="@+id/reject"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.4" />
 

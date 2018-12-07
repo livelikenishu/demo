@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/slideview"
+    android:id="@+id/call"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
@@ -216,15 +216,15 @@
 
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="46dp"
-                android:layout_height="35dp"
+                android:id="@+id/callanswer"
+                android:layout_width="50dp"
+                android:layout_height="42dp"
                 android:layout_marginStart="28dp"
                 android:layout_marginLeft="28dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:src="@drawable/telefono"
-                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintEnd_toStartOf="@+id/reject"
                 app:layout_constraintHorizontal_bias="0.673"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -243,12 +243,12 @@
                 app:layout_constraintEnd_toStartOf="@+id/textView5"
                 app:layout_constraintHorizontal_bias="0.704"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/callanswer"
                 app:layout_constraintVertical_bias="0.0" />
 
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/reject"
                 android:layout_width="36dp"
                 android:layout_height="34dp"
                 android:layout_marginTop="2dp"

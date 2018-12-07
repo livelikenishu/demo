@@ -6,13 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.RatingBar;
-import android.widget.TextView;
 
 import com.simplifyi.simplifyi_phase2.R;
 
 public class Profile extends AppCompatActivity {
     public Button btn_continue;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,15 +21,27 @@ public class Profile extends AppCompatActivity {
     }
 
     private void init() {
-
         btn_continue=(Button)findViewById(R.id.btn_continue);
         btn_continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Profile.this, UserDetailsActivity.class);
-                startActivity(intent);
-            }
+                startActivity(intent);}
         });
+
+
     }
+//    public void back(View view)
+//    {
+//        Intent intent = new Intent(Profile.this, Selecttabs.class);
+//        startActivity(intent);
+//
+//    }
+//    public void setting(View view)
+//    {
+//        Intent intent = new Intent(Profile.this, UserDetailsActivity.class);
+//        startActivity(intent);
+//
+//    }
 
 }

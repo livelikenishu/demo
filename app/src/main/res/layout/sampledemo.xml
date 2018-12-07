@@ -7,13 +7,9 @@
 
     <RelativeLayout
         android:id="@+id/slideview"
-        android:layout_width="340dp"
-        android:layout_height="345dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
+        android:layout_width="338dp"
+        android:layout_height="342dp"
+        android:layout_margin="20dp"
         android:background="@drawable/rectangle_edittext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -183,19 +179,19 @@
                 android:layout_width="318dp"
                 android:layout_height="39dp"
                 android:layout_alignParentTop="true"
-                android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.272"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <ToggleButton
-                    android:id="@+id/imageView"
+                    android:id="@+id/call"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginStart="28dp"
                     android:layout_marginLeft="28dp"
-                    android:src="@drawable/ic_favorite_border"
                     android:checked="false"
+                    android:src="@drawable/ic_favorite_border"
                     android:text=""
                     android:textOff=""
                     android:textOn=""
@@ -213,7 +209,7 @@
                     android:layout_marginBottom="8dp"
                     android:orientation="vertical"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toEndOf="@+id/call"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0">
 
@@ -233,7 +229,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/reject"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginStart="8dp"
@@ -262,7 +258,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/settings"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintStart_toEndOf="@+id/reject"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0">
 

@@ -52,13 +52,11 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.4'
     implementation 'me.anwarshahriar:calligrapher:1.0'
     //Searchbar
-    
-
     implementation 'com.amitshekhar.android:android-networking:1.0.1'
-
-
     implementation 'com.squareup.retrofit2:retrofit:2.2.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
 
+    //Sinch
+    implementation(name: 'sinch-android-rtc', version: '+', ext: 'aar')
 
 }
